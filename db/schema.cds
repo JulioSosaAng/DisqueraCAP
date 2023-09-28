@@ -48,6 +48,7 @@ entity Sesiones : cuid, managed
     horas : Integer;
     disco : Association to  Discos;
     musico : Association to  Musicos;
+    promocion: Boolean default false;
 }
 
 entity MusicosBandas
@@ -61,4 +62,5 @@ entity CentrosDiscos
     disco : Association to one Discos;
     centro : Association to one Centros;
 }
+
 

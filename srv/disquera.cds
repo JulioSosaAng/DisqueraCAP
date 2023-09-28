@@ -27,4 +27,9 @@ service DisqueraService @(path: '/disquera') {
         disco.banda.musicos.musico.nombre as nombre_musico,
         
     }order by creado desc limit 1;
+
+
+    action changeHours (ID: String);
+    function getMusician (ID: UUID) returns String;
+
 }
